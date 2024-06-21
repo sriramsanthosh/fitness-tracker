@@ -73,35 +73,6 @@ export default function Dashboard() {
     
   }
 
-  // let weight = [78, 85, 98, 56, 24, 100, 89];
-  let weight = [];
-
-  // let leaderBoardUsers = [{
-  //   name: "shiva",
-  //   currWeight: "86"
-  // },
-  // {
-  //   name: "pranav",
-  //   currWeight: "89"
-  // },
-  // {
-  //   name: "jashwanth",
-  //   currWeight: "60"
-  // },
-  // {
-  //   name: "sriram",
-  //   currWeight: "65",
-  // },
-  // {
-  //   name: "dinesh",
-  //   currWeight: "50"
-  // },
-  // {
-  //   name: "venky",
-  //   currWeight: "74"
-  // }
-  // ]
-
   const photoURL = localStorage.getItem("photoURL");
   console.log(photoURL);
 
@@ -145,15 +116,6 @@ export default function Dashboard() {
 
       <h1 style={{ marginBottom: "2px" }}>Globalboard <i style={{ color: "gold" }} className="fa-solid fa-crown"></i></h1>
       <sub>According to latest updated weights</sub>
-      {/* <div className='text-left' style={{ maxWidth: "300px", margin: "auto" }}>
-
-        <p>Name</p>
-        <p>
-          <div style={{ position: "relative", margin: "20px 0" }}>
-            <div style={{ width: `80%`, position: "absolute", maxHeight: "100px", background: "skyblue", bottom: "0", fontWeight: "bold" }}>{80}</div>
-          </div>
-        </p>
-      </div> */}
 
       <div>
         {leaderBoardUsers.map((item, index) => {
@@ -164,9 +126,9 @@ export default function Dashboard() {
             </div></div>
         })}
       </div>
-      {/* <div style={{ marginTop: "30px" }}>
+      <div style={{ marginTop: "30px" }}>
         <Pagination defaultCurrent={1} total={50} onChange={(e)=>console.log(e.target.value)} />
-      </div> */}
+      </div>
 
     </div>
   )
